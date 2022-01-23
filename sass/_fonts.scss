@@ -2,18 +2,20 @@
     font-family: 'Futura Book';
     src:
     url('../fonts/futura/FuturaBookC.woff') format('woff'),
-    url('../fonts/futura/FuturaBookC.woff2') format('woff');
+    url('../fonts/futura/FuturaBookC.woff2') format('woff2'),
+    url('FuturaBookC.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: wrap;
     }
 
-    @font-face {
-        font-family: 'Futura Book';
-        src:
-        url('../fonts/futura/FuturaDemiC.woff') format('woff'),
-        url('../fonts/futura/FuturaDemiC.woff2') format('woff');
-        font-weight: normal;
-        font-style: normal;
-        font-display: wrap;
-        }    
+@font-face {
+    font-family: 'Futura Book';
+    src:
+    url('../fonts/futura/FuturaDemiC.woff') format('woff'),
+    url('../fonts/futura/FuturaDemiC.woff2') format('woff2'),
+    url('FuturaDemiC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: wrap;
+    }    
