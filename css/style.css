@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: 'Futura Book';
+  font-family: 'Futura Demi C';
   src: url("../fonts/futura/FuturaDemiC.woff") format("woff"), url("../fonts/futura/FuturaDemiC.woff2") format("woff2"), url("FuturaDemiC.ttf") format("truetype");
   font-weight: 300px;
   font-style: normal;
@@ -673,6 +673,7 @@ img {
   max-width: 500px;
   margin-top: 1rem;
   margin-bottom: 3.6rem;
+  font-weight: normal;
 }
 
 .hero__button {
@@ -807,11 +808,17 @@ img {
   left: 0;
   bottom: -1.79rem;
   font-size: 1.29rem;
+  font-weight: normal;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
   background-color: #E3B873;
   color: #fff;
   padding: 1.214rem 2.6rem;
+}
+
+.card__image {
+  width: 392px;
+  height: 421px;
 }
 
 .modal {
