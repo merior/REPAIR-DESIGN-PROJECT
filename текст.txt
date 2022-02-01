@@ -1,0 +1,35 @@
+ <div class="col-50">
+                    <div class="container">
+                        <div class="section-title section-title--left">
+                            <h2 class="section-title__heading section-title__heading--primary">
+                                Завершенные <span class="section-title__word">проекты</span>
+                            </h2>
+                            <!-- /.section-title__heading -->
+                            <p class="section-title__text">
+                                На сайте представлена ​​лишь небольшая часть работ, выполняемых нашей компанией. За 14 лет работы на строительном рынке мы осчастливили более 1000 семей
+                            </p>
+        
+                        </div>
+                            <!-- /.section-title -->
+                            <!-- Slider main container -->
+                                <div class="swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                      <!-- Slides -->
+                                      <div class="swiper-slide">Slide 1</div>
+                                      <div class="swiper-slide">Slide 2</div>
+                                      <div class="swiper-slide">Slide 3</div>
+                                      ...
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination"></div>
+                                
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                
+                                    <!-- If we need scrollbar -->
+                                    <div class="swiper-scrollbar"></div>
+                                  </div>
+                    </div>
+                </div>
