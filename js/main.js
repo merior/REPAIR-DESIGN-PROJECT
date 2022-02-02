@@ -93,5 +93,11 @@ $(document).ready(function () {
 
         next.css('left', prev.width() + 10 + bullets.width() + 10)
         bullets.css('left', prev.width() + 10)
+
+        var nextTwo = $('.swiper-button-next_2');
+        var bulletsTwo = $('.swiper-pagination_2');
+
+        nextTwo.css('left', prev.width() + 10 + bulletsTwo.width() + 10)
+        bulletsTwo.css('left', prev.width() + 10)
 });
 
