@@ -102,4 +102,87 @@ $(document).ready(function () {
         bulletsTwo.css('left', prev.width() + 10)
 
         new WOW().init();
+
+        //validation
+
+        $('.modal__form').validate({
+            errorClass: "invalid",
+            rules: {
+                // simple rule, converted to {required:true}
+                userName: {
+                  required: true,
+                  minlength: 2,
+                  maxlength: 15
+                },
+                userPhone: "required",
+                // compound rule
+                userEmail: {
+                  required: true,
+                  email: true
+                }
+              },
+              errorElement:"div",
+              messages: {
+                userName: {
+                    required:"Имя обязательно",
+                    minlength:"Имя не короче двух символов",
+                    maxlength:"Имя не длиннее 15 символов"
+                },
+                userPhone: "Обязательно укажите телефон",
+                userEmail: {
+                  required: "Обязательно укажите email",
+                  email: "Введите корректный email, в формате: name@domain.com"
+                }
+              }
+        });
+        $('[type=tel]').mask('+7(000) 000-00-00');
+
+        $('.control__form').validate({
+          errorClass: "invalid",
+          rules: {
+              // simple rule, converted to {required:true}
+              userName: {
+                required: true,
+                minlength: 2,
+                maxlength: 15
+              },
+              userPhone: "required",
+            },
+            errorElement:"div",
+            messages: {
+              userName: {
+                  required:"Имя обязательно",
+                  minlength:"Имя не короче двух символов",
+                  maxlength:"Имя не длиннее 15 символов"
+              },
+              userPhone: "Обязательно укажите телефон",
+              },
+        });
+
+        $('.footer__form').validate({
+          errorClass: "invalid",
+          rules: {
+              // simple rule, converted to {required:true}
+              userName: {
+                required: true,
+                minlength: 2,
+                maxlength: 15
+              },
+              userPhone: "required",
+              userQuestion: "required",
+            },
+            errorElement:"div",
+            messages: {
+              userName: {
+                  required:"Заполните поле",
+                  minlength:"Имя не короче двух символов",
+                  maxlength:"Имя не длиннее 15 символов"
+              },
+              userPhone: "Заполните поле",
+              userQuestion: {
+                required:"Задайте вопрос",
+              },
+            },
+        });
 });
+

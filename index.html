@@ -9,14 +9,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
-    <header class="header">
+    <header class="header wow animate__animated animate__fadeInDown">
         <div class="container">
-            <div class="menu">
-                <div class="logo menu__logo wow animate__animated animate__fadeInLeft">Repair Design Project</div>
+            <div class="menu ">
+                <div class="logo menu__logo ">Repair Design Project</div>
                 <nav class="nav menu__nav">
                     <a href="#" class="nav__item">Главная</a>
                     <a href="#" class="nav__item">Проэкты</a>
@@ -40,20 +44,20 @@
     </header>
     <main>
        <section class="hero">
-           <div class="instagram hero__instagram">
+           <div class="instagram hero__instagram  wow animate__animated  animate__fadeInLeft">
             <a href="#" class="instagram__link">Instagram</a>
            </div>
         <div class="container">
             <div class="hero__content">
          
-                <h1 class="title hero__title">Турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
-                <p class="hero__text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
-                <button class="button hero__button button--primary" data-toggle="modal">Рассчитать стоимость</button>
-                <button class="button hero__button button--outline" >Отправить заявку</button>
+                <h1 class="title hero__title wow animate__animated animate__fadeInRight">Турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
+                <p class="hero__text wow animate__animated animate__fadeInRight">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
+                <button class="button hero__button button--primary wow animate__animated animate__fadeInRight" data-toggle="modal">Рассчитать стоимость</button>
+                <button class="button hero__button button--outline wow animate__animated animate__fadeInRight" >Отправить заявку</button>
              
             </div>
         </div>
-       <a href="#" class="hero__scroll-down">листайте вниз</a>
+       <a href="#" class="hero__scroll-down wow animate__animated  animate__fadeInLeft">листайте вниз</a>
        </section>
 <!-- херо закончилоьсь -->
        <section class="section section--dark projects">
@@ -61,18 +65,18 @@
             <div class="row">
                 <div class="col-50">
                         <div class="section-title section-title--left">
-                            <h2 class="section-title__heading section-title__heading--primary">
-                                Завершенные <span class="section-title__word">проекты</span>
+                            <h2 class="section-title__heading section-title__heading--primary wow animate__animated animate__fadeInLeft" data-wow-delay="0.1s">
+                                Завершенные <span class="section-title__word ">проекты</span>
                             </h2>
                             <!-- /.section-title__heading -->
-                            <p class="section-title__text">
+                            <p class="section-title__text wow animate__animated animate__fadeInLeft " data-wow-delay="0.3s">
                                 На сайте представлена ​​лишь небольшая часть работ, выполняемых нашей компанией. За 14 лет работы на строительном рынке мы осчастливили более 1000 семей
                             </p>
                         </div>
                             <!-- /.section-title -->
              
                             <!-- Slider main container -->
-                                <div class="swiper">
+                                <div class="swiper wow animate__animated animate__fadeInLeft" data-wow-delay="0.5s">
                                     <!-- Additional required wrapper -->
                                     <div class="swiper-wrapper swiper-no-swiping">
                                       <!-- Slides -->
@@ -160,7 +164,7 @@
                       <!-- Slider main container -->
                       <div class="swiper">
                         <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper swiper-no-swiping">
+                        <div class="swiper-wrapper swiper-no-swiping wow animate__animated animate__fadeInRight " data-wow-delay="0.5s">
                           <!-- Slides -->
                           <div class="swiper-slide">
                               <img src="img/types/project.jpg" alt="">
@@ -206,11 +210,11 @@
                 <form action="#" class="form control__form">
                     <div class="control__input-group">
                         <label for="user-name" class="label form__label control__label label--dark">Имя</label>
-                        <input type="text" class="input from__input control__input" id="user-name" placeholder="Как вас зовут:">
+                        <input type="text" class="input from__input control__input" id="user-name" name="userName" placeholder="Как вас зовут:">
                     </div>
                     <div class="control__input-group">
                         <label for="user-phone" class="label form__label control__label label--dark">Телефон</label>
-                        <input type="tel" class="input from__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
+                        <input type="tel" class="input from__input control__input" id="user-phone" name="userPhone" placeholder="Ваш номер телефона:">
                     </div>
                     <button class="button button--primary control__button">Отправить</button>
                     <div class="policy control__policy">
@@ -240,7 +244,7 @@
                 <!-- /.section-title -->
                 <div class="row">
                     <div class="col-30">
-                        <div class="card types__card">
+                        <div class="card types__card wow animate__animated  animate__fadeInUp">
                             <img src="img/types/type1.png" alt="Косметический ремонт" class="card__image">
                             <div class="card__text">
                                 <h3 class="card__title">Косметический ремонт</h3>
@@ -271,7 +275,7 @@
                     </div>
                     <!-- /.col -->
                     <div class="col-30">
-                        <div class="card types__card">
+                        <div class="card types__card wow animate__animated  animate__fadeInUp">
                             <img src="img/types/type2.png" alt="Капитальный ремонт" class="card__image">
                             <div class="card__text">
                                 <h3 class="card__title">Капитальный ремонт</h3>
@@ -302,7 +306,7 @@
                     </div>
                     <!-- /.col -->
                     <div class="col-30">
-                        <div class="card types__card">
+                        <div class="card types__card wow animate__animated animate__fadeInUp">
                             <img src="img/types/type3.png" alt="Дизайнерский ремонт" class="card__image">
                             <div class="card__text">
                                 <h3 class="card__title">Дизайнерский ремонт</h3>
@@ -356,7 +360,7 @@
                 <!-- /.section-title -->
                 <div class="row">
                     <div class="col-30">
-                        <div class="card types__card">
+                        <div class="card types__card wow animate__animated  animate__fadeInUp">
                             <img src="img/types/type1.png" alt="Косметический ремонт" class="card__image">
                             <div class="card__text card__text-min">
                                 <h3 class="card__title">Минимальный</h3>
@@ -382,7 +386,7 @@
                     </div>
                     <!-- /.col -->
                     <div class="col-30">
-                        <div class="card types__card">
+                        <div class="card types__card wow animate__animated  animate__fadeInUp">
                             <img src="img/types/type3.png" alt="Капитальный ремонт" class="card__image">
                             <div class="card__text">
                                 <h3 class="card__title">Стандартный</h3>
@@ -413,7 +417,7 @@
                     </div>
                     <!-- /.col -->
                     <div class="col-30">
-                        <div class="card types__card">
+                        <div class="card types__card wow animate__animated  animate__fadeInUp">
                             <img src="img/types/type4.png" alt="Дизайнерский ремонт" class="card__image">
                             <div class="card__text">
                                 <h3 class="card__title">Дизайнерский ремонт</h3>
@@ -771,7 +775,7 @@
                     </div>
                     <!-- /.col-30 -->
                     <div class="col">
-                        <div class="card card__design" data-wow-delay="0.3s">
+                        <div class="card card__design wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
                             <img src="img/team_2.jpg" alt="Дизайнерский ремонт" class=" card__image_team">
                             <div class="card__text">
                                 <div class="card-team__human">
@@ -832,8 +836,8 @@
                 </div>
                 <!-- /.section-title -->
                 <div class="row">
-                    <div class="col" data-wow-delay="0.1s">
-                        <div class="feedback-item">
+                    <div class="col wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                        <div class="feedback-item ">
                             <div class="feedback-item__title">
                                 <img src="./img/client-photo-1.png" alt="фото клиента" class="feedback-item__img">
                                 <h3 class="card__title">Савельева <br> Екатерина Львовна</h3>
@@ -853,7 +857,7 @@
                         </div>
                     </div>
                     <!-- /.col-30 -->
-                    <div class="col" data-wow-delay="0.3s">
+                    <div class="col wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
                         <div class="feedback-item">
                             <div class="feedback-item__title">
                                 <img src="./img/client-photo-2.png" alt="фото клиента" class="feedback-item__img">
@@ -874,7 +878,7 @@
                         </div>
                     </div>
                     <!-- /.col-30 -->
-                    <div class="col" data-wow-delay="0.5s">
+                    <div class="col wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
                         <div class="feedback-item">
                             <div class="feedback-item__title">
                                 <img src="./img/client-photo-3.png" alt="фото клиента" class="feedback-item__img">
@@ -904,7 +908,7 @@
     </main>
     <footer class="footer section section--dark">
         <div class="container">
-            <div class="footer__wrap">
+            <div class="footer__wrap  wow animate__animated animate__zoomIn">
                 <h3 class="footer__title">Остались вопросы?</h3>
                 <form action="#" class="form footer__form">
                     <div class="input-group footer__input-group">
@@ -938,14 +942,20 @@
             <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами </h3>
             <form action="" class="form modal__form">
 
-                <label for="user-name" class="label form__label label--light">Имя</label>
-                <input type="text" class="input form__input modal__input" id='user-name' placeholder="Как вас зовут:">
+                <div class="input-group modal__input-group">
+                    <label for="user-name" class="label form__label label--light">Имя</label>
+                    <input type="text" name="userName" class="input form__input modal__input" id='user-name' placeholder="Как вас зовут:">
+                </div>
 
-                <label for="user-phone" class="label form__label label--light">Телефон</label>
-                <input type="tel" class="input form__input modal__input" id='user-phone' placeholder="Ваш номер телефона:">
+                <div class="input-group modal__input-group">
+                    <label for="user-phone" class="label form__label label--light">Телефон</label>
+                    <input type="tel" name="userPhone" class="input form__input modal__input" id='user-phone' placeholder="Ваш номер телефона:">
+                </div>
 
-                <label for="user-email" class="label form__label label--light">Email</label>
-                <input type="email" class="input form__input  modal__input" id='user-email' placeholder="Ваш email">
+                <div class="input-group modal__input-group">
+                    <label for="user-email" class="label form__label label--light">Email</label>
+                    <input type="email" name="userEmail" class="input form__input  modal__input" id='user-email' placeholder="Ваш email">
+                </div>
 
                 <div class="policy modal__policy">
                     <input type="checkbox" name="policy-checkbox" class="policy__checkbox" id="policy-checkbox" checked>
@@ -963,6 +973,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

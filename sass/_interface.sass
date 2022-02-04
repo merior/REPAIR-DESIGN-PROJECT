@@ -35,6 +35,9 @@
     padding: 0.5rem 0
     &::placeholder
         color: $light
+    &.invalid
+        border-bottom: 1px solid tomato
+        
 .policy
     &__checkbox
         opacity: 0
@@ -55,5 +58,9 @@
             cursor: pointer
             margin-right: 0.64rem
             
+label
+    &.invalid
+        color: tomato
+
 
 
