@@ -1847,6 +1847,9 @@ img {
   .styles .col .col-2 {
     right: 2%;
   }
+  .hero::after {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1987,9 +1990,6 @@ img {
 @media screen and (max-width: 992px) {
   .nav {
     display: none;
-  }
-  .hero {
-    height: 50vh;
   }
   .hero__instagram {
     display: none;
@@ -2144,9 +2144,6 @@ img {
 }
 
 @media screen and (max-height: 520px) {
-  .hero::after {
-    display: none;
-  }
   .hero__scroll-down {
     display: none;
   }
@@ -2156,9 +2153,20 @@ img {
   }
 }
 
-@media screen and (max-width: 460px) {
-  .types .card__text {
-    max-width: 20.6rem;
+@media screen and (max-width: 375px) {
+  .section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .types {
+    margin-bottom: 0;
+  }
+  .design {
+    padding-bottom: 30rem;
+  }
+  .card__design {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

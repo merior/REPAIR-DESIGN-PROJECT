@@ -18,6 +18,10 @@
                 right: 30% 
             .col-2
                 right: 2%
+    .hero
+        &::after
+            display: none
+        
     
 @media screen and ( max-width: 1200px )
     html
@@ -109,7 +113,6 @@
     .nav
         display: none
     .hero
-        height: 50vh
         &__instagram
             display: none
         &__content
@@ -198,8 +201,6 @@
             margin-bottom: 1.85rem
 @media screen and ( max-height: 520px )
     .hero
-        &::after
-            display: none
         &__scroll-down
             display: none
     .control
@@ -208,7 +209,15 @@
                 width: 37px
                 height: 37px
 
-@media screen and ( max-width: 460px )
+@media screen and ( max-width: 375px )
+    .section
+        padding-left: 1rem
+        padding-right: 1rem
     .types
-        .card__text
-            max-width: 20.6rem
+        margin-bottom: 0
+    .design
+        padding-bottom: 30rem
+    .card
+        &__design
+            margin-top: 5rem
+            margin-bottom: 5rem
