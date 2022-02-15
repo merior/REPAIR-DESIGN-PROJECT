@@ -901,7 +901,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  flex-basis: 30%;
+  flexbasis: 30%;
 }
 
 .control__label {
@@ -2144,6 +2144,9 @@ img {
 }
 
 @media screen and (max-height: 520px) {
+  .hero::after {
+    display: none;
+  }
   .hero__scroll-down {
     display: none;
   }
