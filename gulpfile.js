@@ -27,11 +27,11 @@ exports.default = () => (
 		.pipe(gulp.dest('dist'))
 );
 
-function buildCSS(done){
+function buildCSS(done) {
     src('css/**/**.css')
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(dest('dist/css/'));
-    done()
-};
+        .pipe(dist('dest/css/'));
+    done();
+}
 
 exports.buildCSS = buildCSS;
