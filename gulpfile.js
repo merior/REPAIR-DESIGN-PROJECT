@@ -1,3 +1,4 @@
+const { src } = require('gulp');
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const autoprefixer = require('gulp-autoprefixer');
@@ -24,3 +25,8 @@ exports.default = () => (
 		}))
 		.pipe(gulp.dest('dist'))
 );
+
+function buildCSS(done){
+    src('css/**/**.css').pipe()
+    done()
+}
