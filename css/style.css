@@ -1049,7 +1049,7 @@ img {
 }
 
 .types .discounts-container .discounts__text {
-  font-family: 'Futura Demi', cursive;
+  font-family: 'Futura Demi';
   font-size: 1.429rem;
   line-height: 1.786rem;
   color: #E3B873;
@@ -1522,6 +1522,10 @@ img {
 .feedback {
   padding-top: 0;
   padding-bottom: 25.286rem;
+}
+
+.feedback .section-title__image {
+  margin-bottom: 1.4rem;
 }
 
 .feedback .section-title__subtitle {
