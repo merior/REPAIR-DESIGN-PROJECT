@@ -64,22 +64,14 @@ $(document).ready(function () {
           }
         });
         
-        scrollDownBtn.click(function () {
-          $('body, html').animate({
-              scrollTop: scrollDownBtn.offset().top 
-          }, 1000);
-      });
-
-      btn.on('click', function(e) {
-        e.preventDefault();
-        $('html, body').animate({scrollTop:0}, '300');
-      });
-
-      $(".hero__scroll-down").click(function() { // ID откуда кливаем
-        $('html, body').animate({
-            scrollTop: $(".types").offset().top  // класс объекта к которому приезжаем
-        }, 1000); // Скорость прокрутки
+        btn.on('click', function(e) {
+          e.preventDefault();
+          $('html, body').animate({scrollTop:0}, '300');
         });
+
+        // var mySwiper = new Swiper ('.swiper-container', {
+        //     loop: true
+        // })
 
         const swiper = new Swiper('.swiper', {
             loop: true,
