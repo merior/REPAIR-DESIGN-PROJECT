@@ -1443,6 +1443,7 @@ img {
 }
 
 .team .col .card {
+  position: relative;
   max-width: 19.43rem;
   z-index: 3;
 }
@@ -2157,7 +2158,7 @@ img {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   .section {
     padding-left: 1rem;
     padding-right: 1rem;
